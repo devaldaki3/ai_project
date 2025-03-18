@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ### 1️⃣ **Ensure the Trained Model Exists**
 
-Make sure the **voting_model.pkl** file is in the project folder. If not, train the model first.
+Make sure the **xgboost_otd_model.pkl** file is in the model folder. If not, train the model **first using train_model.py**.
 
 ### 2️⃣ **Run the Streamlit App**
 
@@ -55,6 +55,8 @@ streamlit run app.py
 ```
 
 This will start a local web server, and you can access the app in your browser.
+
+![Alt Text](assets/local_app.png)
 
 ## 🎯 How to Use the App
 
@@ -67,18 +69,23 @@ This will start a local web server, and you can access the app in your browser.
 
 - **Trained on**: Historical order delivery data
 - **Algorithms used**: XGBoost, Random Forest, SVM
-- **Final Model**: Voting Ensemble (`voting_model.pkl`)
+- **Final Model**: Voting Ensemble (`xgboost_otd_model.pkl`)
 
 ## 📂 Project Structure
 
 ```bash
 📂 Timelytics
- ┣ 📂 assets/               # Images & static assets
- ┣ 📂 data/                 # Raw dataset files
- ┣ 📜 app.py                # Streamlit App
- ┣ 📜 voting_model.pkl      # Trained ML model
- ┣ 📜 requirements.txt      # List of dependencies
- ┣ 📜 README.md             # Project Documentation
+ ├── .streamlit/
+ │   └── config.toml            # configuration file
+ ├── 📂 assets/                 # Images & static assets
+ ├── 📂 data/                   # Raw dataset files
+ ├── 📂 models/
+ │   └── xgboost_otd_model.pkl   # Trained ML model
+ │   └── label_encoder.pkl       # Trained ML model
+ ├── 📜 streamlit_app.py         # Streamlit App
+ ├── 📜 packages.txt             # Trained ML model
+ ├── 📜 requirements.txt         # List of dependencies
+ ├── 📜 README.md                # Project Documentation
 ```
 
 ## 📄 License
