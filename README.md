@@ -31,7 +31,7 @@ This project helps businesses optimize their **supply chain operations** by iden
 ### 1️⃣ **Clone the Repository**
 
 ```sh
-https://github.com/devaldaki3/ai_project_deployment
+https://github.com/devaldaki3/ai_project
 ```
 
 ### 2️⃣ **Install Required Dependencies**
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 Make sure the **voting_model.pkl** file is in the project folder. If not, train the model first.
 
-### 2️⃣ **Run the Streamlit App**  
+### 2️⃣ **Run the Streamlit App**
 
 ```sh
 streamlit run app.py
@@ -56,18 +56,20 @@ streamlit run app.py
 
 This will start a local web server, and you can access the app in your browser.
 
-## 🎯 How to Use the App  
+## 🎯 How to Use the App
+
 1️⃣ **Open the App** in your browser.  
 2️⃣ **Input Order Details** (e.g., product size, weight, location, distance).  
 3️⃣ Click **"Predict"** to get the estimated delivery time.  
-4️⃣ See the **Predicted Delivery Time** displayed on the screen.  
+4️⃣ See the **Predicted Delivery Time** displayed on the screen.
 
-## 📊 Model Information  
-- **Trained on**: Historical order delivery data  
-- **Algorithms used**: XGBoost, Random Forest, SVM  
-- **Final Model**: Voting Ensemble (`voting_model.pkl`)  
+## 📊 Model Information
 
-## 📂 Project Structure  
+- **Trained on**: Historical order delivery data
+- **Algorithms used**: XGBoost, Random Forest, SVM
+- **Final Model**: Voting Ensemble (`voting_model.pkl`)
+
+## 📂 Project Structure
 
 ```bash
 📂 Timelytics
@@ -78,10 +80,13 @@ This will start a local web server, and you can access the app in your browser.
  ┣ 📜 requirements.txt      # List of dependencies
  ┣ 📜 README.md             # Project Documentation
 ```
-## 📄 License  
-This project is open-source and free to use under the **MIT License**.  
 
-## 📩 Contact  
-For questions or contributions, feel free to reach out!  
+## 📄 License
+
+This project is open-source and free to use under the **MIT License**.
+
+## 📩 Contact
+
+For questions or contributions, feel free to reach out!
 
 📌 **GitHub**: [devaldaki3](https://github.com/devaldaki3)
